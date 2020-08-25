@@ -1,0 +1,48 @@
+.black-nav{
+    color: #000 !important;
+    background-color: #000 !important;
+}
+.black{
+    background-color: #000 !important;
+}
+.text-white{
+    color: white !important;
+}
+.text-oro{
+   color: #ffd54d !important ;
+}
+.white{
+    color: white !important;
+    background-color:white !important ;
+}
+.box-filtres{
+    border-radius: 30px;
+}
+.forms-radius{
+    border-radius: 20px !important;
+}
+.size{
+    border-radius: 20px !important;
+    
+}
+.test{
+    width: 300px !important;
+    height:  150px !important;
+
+}
+.radius{
+    border-radius: 20px !important;
+
+}
+.text-black{
+    color: #000;
+}
+.test-index{
+    width: 200px !important;
+    height:  100px !important;
+
+}
+.div-space{
+    width: 2px !important;
+    height:  1px !important;
+}
