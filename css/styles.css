@@ -46,3 +46,22 @@
     width: 2px !important;
     height:  1px !important;
 }
+
+/* 
+@media (max-width: 767px) {
+.img-sizes-responsive {
+     width: 1000px;
+     height: 1000px;
+}
+} */
+
+@media (max-width: 767px) {
+    .img-sizes-responsive {
+        width: 150px !important;
+        height: 208px !important;
+    }
+    .img-product{
+        width: 100px;
+        height: 139px;
+    }
+  }
