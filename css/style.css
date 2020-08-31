@@ -1,0 +1,156 @@
+/**************************
+        INDICE
+**************************/
+
+
+/* ----------------------
+1. Navbar
+2. BuySell buttons
+3. Cars Navigation
+4. Inner cards carousel
+5. Description in cards
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ----------------------
+1. Navbar
+---------------------- */
+
+.bg-black{
+    background-color: #000 !important;
+}
+
+.nav-button{
+    margin: 10px;
+    min-width: 150px;
+    border-radius: 30px;
+    border-color: #ffd54d solid 1px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------
+2. BuySell
+---------------------- */
+
+#buySell{
+    margin-top: 120px;
+    
+}
+
+#buySell a{
+    margin: 10px;
+    min-width: 150px !important;
+    border-radius: 30px;
+    border-color: #ffd54d;
+   
+}
+
+/* ----------------------
+3. Cars Navigation
+---------------------- */
+.total{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.car-card{
+    margin: 0px;
+    min-width:0px;
+    padding: 5px;
+    
+}
+
+.card{
+   min-width: 365px;
+   min-height: 700px;
+}
+
+.card-body{
+    padding: 0px !important;
+    background-color: #000 !important;
+    color: white;
+    /* border-radius: 10px; */
+}
+
+
+/* ----------------------
+4. Inner cards carousel
+---------------------- */
+
+.carousel-main img{ 
+    width:200px; 
+    height:200px;}
+
+#carousel-thumnails-selector1 .col-xs-3,
+#carousel-thumnails-selector2 .col-xs-3,
+#carousel-thumnails-selector3 .col-xs-3,
+#carousel-thumnails-selector4 .col-xs-3,
+#carousel-thumnails-selector5 .col-xs-3
+{
+    padding: 0px !important;
+    margin: -7px !important;
+}
+
+#carousel-thumnails-selector1 img,
+#carousel-thumnails-selector2 img,
+#carousel-thumnails-selector3 img,
+#carousel-thumnails-selector4 img,
+#carousel-thumnails-selector5 img {
+    width: 80px !important;
+    height: 50px !important;
+    margin: 8px !important;
+}
+
+/* ----------------------
+5. Description in cards
+---------------------- */
+
+#inner-description{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#inner-description img{
+    max-width: 150px;
+}
+
+#inner-description img,p{
+    padding: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* BREAKPOINTS */
