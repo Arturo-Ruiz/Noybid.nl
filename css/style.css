@@ -12,6 +12,8 @@
 6. Footer
 7. Filter Comprar
 8. Comprar Carousel
+9.Drag and drop
+10. Car Screen
 
 BREAKPOINTS
  */
@@ -44,25 +46,20 @@ BREAKPOINTS
     border-color: #ffd54d solid 1px !important;
 }
 
-
+.search-input input{
+    margin-left: 30px;
+    min-width: 450px !important;
+    max-height: 35px;
+    border-radius: 25px;
+    border: none;
+}
 
 
 /* ----------------------
 2. BuySell
 ---------------------- */
 
-#buySell{
-    margin-top: 120px;
-    
-}
 
-#buySell a{
-    margin: 10px;
-    min-width: 150px !important;
-    border-radius: 30px;
-    
-   
-}
 
 #botones_Centrales{
     margin-top: 120px;
@@ -104,6 +101,14 @@ BREAKPOINTS
     /* border-radius: 10px; */
 }
 
+.cars-main .carousel-control-prev{
+    margin-left: -7px;
+}
+
+.cars-main .carousel-control-next{
+    margin-right: -7px;
+}
+
 
 
 /* ----------------------
@@ -121,7 +126,7 @@ BREAKPOINTS
 #carousel-thumnails-selector5 .col-xs-3
 {
     padding: 0px !important;
-    margin: -7px !important;
+    margin: -2px !important;
 }
 
 #carousel-thumnails-selector1 img,
@@ -129,9 +134,9 @@ BREAKPOINTS
 #carousel-thumnails-selector3 img,
 #carousel-thumnails-selector4 img,
 #carousel-thumnails-selector5 img {
-    width: 80px !important;
-    height: 50px !important;
-    margin: 8px !important;
+    width: 50px !important;
+    height: 30px !important;
+    margin: 5px !important;
 }
 
 
@@ -242,7 +247,150 @@ BREAKPOINTS
 
 
 
+/* ----------------------
+9. Drag and Drop Input
+---------------------- */
 
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0px ;
+    width: 100% !important;
+}
+.files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #92b0b3;
+ }
+.files{ position:relative}
+.files:after {  pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.color input{ background-color:#f1f1f1;}
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;  pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: " or drag it here. ";
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+
+
+/* ----------------------
+10. Car screen
+---------------------- */
+
+#car-screen{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    
+       
+}
+
+#car-screen .card{
+    border: none;
+       
+}
+
+
+#car-screen-carousel .carousel-item img{
+    width: 200px;
+    height: 400px;
+}
+
+#screen-car-thumbnails .carousel-item img{
+    max-width: 90px;
+    max-height: 70px;
+    margin: 5px;
+}
+
+.carousel-control-prev{
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 30px;
+    
+}
+
+.carousel-control-next{
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 30px;
+    
+}
+
+#lateral-info{
+    padding-bottom: 20px;
+    border: #53545C 1px solid;
+}
+
+#lateral-info .fecha{
+    color:  #ffd54d;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.year-km {
+    font-size: 14px;
+    color: #AEB2C2;
+    margin-top: -5px;
+}
+.car-color{
+    font-size: 14px;
+    color: #AEB2C2;
+    margin-top: -20px;
+}
+
+
+#lateral-info textarea{
+    max-width: 350px !important;
+    max-height: 100px !important;
+    resize: none !important;
+    border: 2px solid #DBDBDB;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#lateral-info button{
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    
+}
+
+.car-location{
+    max-width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.mapa-info{
+    height: 120px;
+}
 
 
 
@@ -306,7 +454,7 @@ BREAKPOINTS
             width: 30px !important;
             height: 30px !important;
             margin-top: 8px;
-            margin-left: -15px;
+            margin-left: -10px;
             
         }
     
@@ -314,7 +462,7 @@ BREAKPOINTS
             width: 30px !important;
             height: 30px !important;
             margin-top: 8px;
-            margin-right: -15px;
+            margin-right: -10px;
         }
         
         #inner-description-compra div{
@@ -324,4 +472,43 @@ BREAKPOINTS
 
         }
 
+                /* break ponit car screen */
+
+        @media  (max-width:991.98px){
+
+            #screen-car-thumbnails .carousel-item img{
+               max-width: 60px !important;
+               max-height: 40px;
+            }
+
+            #screen-car-thumbnails .carousel-control-prev{
+                width: 30px !important;
+                height: 30px !important;
+                margin-top: 8px;
+                margin-left: -10px;
+                
+            }
+
+            #screen-car-thumbnails .carousel-control-next{
+                width: 30px !important;
+                height: 30px !important;
+                margin-top: 8px;
+                margin-right: -10px;
+            }
+
+
+        }
+        @media  (max-width:767.98px){
+
+
+            #screen-car-thumbnails .carousel-item img{
+                max-width: 55px !important;
+                max-height: 40px;
+             }
+
+             .info-header, .price-header, .facts-header{
+                 margin-left: 40px;
+             }
+
+        }
     
